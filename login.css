@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Chosunilbo_myungjo';
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+.login-form {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.login-img video {
+    width: 750px;
+    height: 600px;
+    object-fit: fill;
+    float: left;
+}
+
+.text-container {
+    width: 450px;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.text-area h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.text-area p {
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.index-area {
+    position: relative;
+}
+
+.index-area input {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    position: relative;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    font-family: 'Chosunilbo_myungjo';
+}
+
+.index-area label {
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+
+label {
+    transition: .5s;
+
+}
+
+.createAccount button {
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    font-size: 20px;
+    font-family: 'Chosunilbo_myungjo';
+
+}
+
+.index-area input:focus~label,
+.index-area input:valid~label {
+    font-size: 13px;
+    top: -10px
+}
+
+input:focus,
+input:valid {
+    outline: none;
+    font-family: 'Chosunilbo_myungjo';
+}
+
+.but-area button:hover {
+    cursor: pointer;
+}
+
+.find-id {
+    margin-top: 40px;
+}
+
+.find-id ul {
+    list-style: none;
+}
+
+.find-id ul li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+
+.find-id a {
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+}
