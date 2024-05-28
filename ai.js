@@ -1,15 +1,38 @@
 'use strict';
+let inputin = document.querySelectorAll('input');
 
-const car= {
-    carName: 'spark',
-    color:'while',
-    carNumber: '20모4471',
-    performance: {             // 값(value)에는 리터럴 객체를 직접 지정 가능.                             
-        speed: 100,
-        breakCapability: 10                                               
-        }
-};
+let label = document.querySelectorAll('label');
 
-for(const i in car){
-    console.log(i,car[i]);
+let btn = document.querySelector('button');
+console.log(inputin);
+let idname = document.getElementById('userId');
+console.log(idname.value);
+let index_area = document.getElementsByClassName('index-area');
+console.log(idname.value);
+
+function IsExistValue() {
+    let innamelenght = idname.value.length;
+    if (innamelenght > 0)
+        return true;
+    return false;
 }
+
+for (let i = 0; i < inputin.length; i++) {
+    inputin[i].addEventListener("focus", () => {
+        label[i].style.fontSize = '13px';
+        label[i].style.top = '-10px';
+        inputin[i].style.outline = 'none';
+    });
+
+    inputin[i].addEventListener("blur", () => {
+        console.log(IsExistValue());
+        if (IsExistValue() == false) {
+            label[i].style.position = 'absolute';
+            label[i].style.left = '10px';
+            label[i].style.top = '10px';
+            label[i].style.fontSize = '16px';
+        }
+    });
+}
+
+

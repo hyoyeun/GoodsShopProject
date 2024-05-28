@@ -46,7 +46,7 @@ body {
     justify-content: center;
 }
 
-.text-container a{
+.text-container a {
     text-decoration-line: none;
     color: black;
 }
@@ -83,8 +83,7 @@ body {
 }
 
 label {
-    transition: .5s;
-
+    transition: .3s;
 }
 
 .createAccount button {
@@ -97,18 +96,6 @@ label {
     font-size: 20px;
     font-family: 'Chosunilbo_myungjo';
 
-}
-
-.index-area input:focus~label,
-.index-area input:valid~label {
-    font-size: 13px;
-    top: -10px
-}
-
-input:focus,
-input:valid {
-    outline: none;
-    font-family: 'Chosunilbo_myungjo';
 }
 
 .but-area button:hover {
